@@ -120,7 +120,7 @@
                         // 更新資料
 
                         //建立SQL
-                        $sql = "update my_interest set mINTEREST_STATUS = ? where mMEMBER_ID = ? and mINTEREST_ID = ?";
+                        $sql = "UPDATE my_interest SET mINTEREST_STATUS = ? WHERE mMEMBER_ID = ? AND mINTEREST_ID = ?";
 
                         //執行
                         $statement = $Util->getPDO()->prepare($sql);
@@ -157,7 +157,7 @@
 
                 for ($i = 1 ; $i <= count($interestlist) ; $i++ ) {
                     //建立SQL
-                    $sql = "SELECT mINTEREST_STATUS FROM my_interest WHERE mINTEREST_ID = ? and mMEMBER_ID = ?";
+                    $sql = "SELECT mINTEREST_STATUS FROM my_interest WHERE mINTEREST_ID = ? AND mMEMBER_ID = ?";
 
                     //執行
                     $statement = $Util->getPDO()->prepare($sql);
@@ -183,7 +183,7 @@
                         // 更新資料
 
                         //建立SQL
-                        $sql = "update my_interest set mINTEREST_STATUS = ? where mMEMBER_ID = ? and mINTEREST_ID = ?";
+                        $sql = "UPDATE my_interest SET mINTEREST_STATUS = ? WHERE mMEMBER_ID = ? AND mINTEREST_ID = ?";
 
                         //執行
                         $statement = $Util->getPDO()->prepare($sql);

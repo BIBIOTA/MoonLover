@@ -8,7 +8,7 @@
 
         $mId = $_POST["mId"];
 
-        $sql = "SELECT * FROM `relationship` WHERE MYMEMBER_ID = $id and TARGET_ID = ?";
+        $sql = "SELECT * FROM `relationship` WHERE MYMEMBER_ID = $id AND TARGET_ID = ?";
 
         //執行
         $statement = $Util->getPDO()->prepare($sql);

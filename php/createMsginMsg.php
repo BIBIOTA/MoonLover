@@ -51,7 +51,7 @@ $statement->bindValue(4, $msg);
 $statement->execute();
 
 // 取得最後一個留言ID
-$sql = "SELECT ID, MSG_DATE  FROM temple_msg_in_msg where tmMEMBER_ID = ? order by ID desc LIMIT 1";
+$sql = "SELECT ID, MSG_DATE  FROM temple_msg_in_msg WHERE tmMEMBER_ID = ? ORDER BY ID DESC LIMIT 1";
 
 //執行
 $statement = $Util->getPDO()->prepare($sql);

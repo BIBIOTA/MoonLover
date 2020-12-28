@@ -6,7 +6,7 @@
 
 
         //籤詩randon
-        $sql = "SELECT * FROM Draw where `STATUS` = 1 ORDER BY RAND() LIMIT 1";
+        $sql = "SELECT * FROM draw where `STATUS` = 1 ORDER BY RAND() LIMIT 1";
 
 
         //籤詩一條一條測試
